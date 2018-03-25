@@ -7,11 +7,19 @@
 <body>
 
 <!-- Create a div for every Most Loved Melon using a Jinja for loop -->
+{% for melon in loved_melons %}
     <div class='melon-div'>
+        <h3>{{ loved_melons[melon]['name'] }}</h3>
+        <h2>Loved {{ loved_melons[melon]['num_loves'] }} times.</h2>
+        <img src= {{ loved_melons[melon]['img'] }} >
+    </div>
+{% endfor %}
+
+<!--     <div class='melon-div'>
         <h3>Texas Golden Watermelon</h3>
         <h2>Loved 598 times.</h2>
         <img src='http://www.rareseeds.com/assets/1/14/DimThumbnail/Texas-Golden-2-Watermelon-web.jpg'>
-    </div>
+    </div> -->
 
 
 </body>

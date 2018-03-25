@@ -37,6 +37,13 @@ MOST_LOVED_MELONS = {
 # YOUR ROUTES GO HERE
 
 
+@app.route("/top-melons")
+def show_top_melons():
+    """ Renders list of most beloved melons """
+
+    return render_template("top-melons.html", loved_melons=MOST_LOVED_MELONS)
+
+
 if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the
     # point that we invoke the DebugToolbarExtension
