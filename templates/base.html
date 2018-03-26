@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/styles.css"/>
+    <title>{% block title %}TITLE GOES HERE{% endblock %}</title>
+</head>
+<body>
+    <div class="header"><h1>UberMelon's Most Loved Melons</h1></div>
+
+    <!-- Show flashed messages -->
+    {% with messages = get_flashed_messages() %}
+        {% for message in messages %}
+            <div class="warning">{{ message }}</div>
+        {% endfor %}
+    {% endwith %}
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

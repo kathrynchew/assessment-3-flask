@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}ALL THE BEST MELONS{% endblock %}
+{% block body %}
+<div><p>
+    <img class="hero_image" src="/static/img/2015-05-26_01-31-28-592x332.jpg">
+</p></div>
+<hr>
+<form action="/get-name">
+    <div class="get_name"><h2>What is your name?</h2>
+        <br><input name="name" type="text">
+        <br><button type="submit">Submit</button>
+    </div>
+</form>
+{% endblock %}

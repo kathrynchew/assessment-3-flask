@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Top Melons</title>
-    <link rel="stylesheet" type="text/css" href="/static/styles.css">
-</head>
-<body>
-
+{% extends 'base.html' %}
+{% block title %}ONLY THE BEST OF ALL MELONS{% endblock %}
+{% block body %}
 <!-- Create a div for every Most Loved Melon using a Jinja for loop -->
+
+<!-- Created this conditional prior to reaching Part 3; leaving it in since it 
+    shouldn't affect anything -->
+{% if 'name' in session: %}
+    <div id='name'><p><h3>Welcome, {{ session['name'] }}!</h3></p></div>
+{% endif %}
+
 {% for melon in loved_melons %}
     <div class='melon-div'>
+        {{ session['name'] }}, feast your eyes on:
         <h3>{{ loved_melons[melon]['name'] }}</h3>
-        <h2>Loved {{ loved_melons[melon]['num_loves'] }} times.</h2>
-        <img src= {{ loved_melons[melon]['img'] }} >
+        <img class='melon_pic' src= {{ loved_melons[melon]['img'] }} >
+        <h2>Number of &hearts;s: <span class='num_loves'>{{ loved_melons[melon]['num_loves'] }}</span></h2>
     </div>
 {% endfor %}
 
-<!--     <div class='melon-div'>
-        <h3>Texas Golden Watermelon</h3>
-        <h2>Loved 598 times.</h2>
-        <img src='http://www.rareseeds.com/assets/1/14/DimThumbnail/Texas-Golden-2-Watermelon-web.jpg'>
-    </div> -->
-
-
-</body>
-</html>
+{% endblock %}
