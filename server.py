@@ -62,6 +62,16 @@ def show_top_melons():
         return redirect("/")
 
 
+@app.route("/love-melon", methods=['POST'])
+def love_a_melon():
+    """ Allow user to add a 'love' to a top melon """
+    melon_to_love = request.form["melon_to_love"]
+    MOST_LOVED_MELONS[melon_to_love]['num_loves'] += 1
+    
+    flash("{}, you have successfully loved {}!".format(session['name'], MOST_LOVED_MELONS[melon_to_love]['name']))
+    return redirect("/top-melons")
+
+
 if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the
     # point that we invoke the DebugToolbarExtension

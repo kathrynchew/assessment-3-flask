@@ -18,4 +18,15 @@
     </div>
 {% endfor %}
 
+<div class="love_zone">
+    <h3>Select a Melon to &hearts;:</h3>
+    <form action="/love-melon" method="POST">
+        <select name="melon_to_love">
+            {% for key in loved_melons.keys() %}
+            <option value="{{ key }}">{{ loved_melons[key]['name'] }}</option>
+            {% endfor %}
+        </select>&nbsp;&nbsp;&nbsp;<button type="submit">Pick Me! &hearts;</button>
+    </form>
+</div>
+
 {% endblock %}
