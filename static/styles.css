@@ -6,10 +6,10 @@ img {
 .melon-div {
     display: inline-block;
     padding: 10px;
-    width: 225px;
-    outline-width: 1px;
-    outline-color: #5d5e60;
-    outline-style: solid;
+    width: 235px;
+    outline-width: 2px;
+    outline-color: #4a9947;
+    outline-style: dashed;
     margin: 10px;
     text-align: center;
     background-color: white;
@@ -23,15 +23,28 @@ img {
 
 div.header {
     background-color: #33684f;
-    height: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-top: 0;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 h1 {
     font-family: "Impact";
     font-size: 50px;
-    color: white;
+    color: red;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: red;
+    font-size: 25px
+}
+
+h3 {
+    color: red;
+    font-family: sans-serif;
 }
 
 .get_name {
@@ -41,15 +54,17 @@ h1 {
 }
 
 body {
-    background-color: #b3f9bf;
+    background-color: #f4c881;
 }
 
 img.hero_image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 592px;
-    height: 332px;
+    width: 70%;
+    height: 79%;
+    /*width: 592px;
+    height: 332px;*/
 }
 
 .num_loves{
