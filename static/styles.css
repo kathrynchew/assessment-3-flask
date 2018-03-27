@@ -74,6 +74,10 @@ img.hero_image {
 
 #name {
     margin-left: 10px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px
 }
 
 .warning {

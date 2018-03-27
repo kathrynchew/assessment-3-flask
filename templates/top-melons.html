@@ -6,7 +6,7 @@
 <!-- Created this conditional prior to reaching Part 3; leaving it in since it 
     shouldn't affect anything -->
 {% if 'name' in session: %}
-    <div id='name'><p><h3>Welcome, {{ session['name'] }}!</h3></p></div>
+    <div id='name'><p>Welcome, {{ session['name'] }}!</p></div>
 {% endif %}
 
 {% for melon in loved_melons %}
