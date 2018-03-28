@@ -1,3 +1,60 @@
+/* ***** Base & Default Styles ***** */
+
+div.header {
+    background-color: #33684f;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+body {
+    background-color: #f4c881;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Impact";
+    font-size: 50px;
+    color: red;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: red;
+    font-size: 25px
+}
+
+h3 {
+    color: red;
+    font-family: sans-serif;
+}
+
+.warning {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    background-color: yellow;
+}
+
+
+/* ***** Home Page ***** */
+
+img.hero_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+    /*width: 592px;
+    height: 332px;*/
+}
+
+
+/* ***** Top Melons ***** */
+
 img {
     height: 200px;
     width: 200px;
@@ -21,51 +78,10 @@ img {
     margin-left: auto;
 }
 
-div.header {
-    background-color: #33684f;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 0;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-h1 {
-    font-family: "Impact";
-    font-size: 50px;
-    color: red;
-}
-
-h2 {
-    font-family: sans-serif;
-    color: red;
-    font-size: 25px
-}
-
-h3 {
-    color: red;
-    font-family: sans-serif;
-}
-
 .get_name {
     font-family: "sans-serif";
     font-weight: bold;
     text-align: center;
-}
-
-body {
-    background-color: #f4c881;
-    margin: 0;
-}
-
-img.hero_image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: 60%;
-    /*width: 592px;
-    height: 332px;*/
 }
 
 .num_loves{
@@ -78,14 +94,6 @@ img.hero_image {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 20px
-}
-
-.warning {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    font-family: sans-serif;
-    background-color: yellow;
 }
 
 .love_zone {

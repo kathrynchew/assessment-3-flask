@@ -5,7 +5,7 @@
     <title>{% block title %}TITLE GOES HERE{% endblock %}</title>
 </head>
 <body>
-    <div class="header"><h1>UberMelon's Most Loved Melons</h1></div>
+    <div class="header"><h1>&hearts; UberMelon's Most Loved Melons &hearts;</h1></div>
 
     <!-- Show flashed messages -->
     {% with messages = get_flashed_messages() %}
@@ -15,6 +15,7 @@
     {% endwith %}
 
     {% block body %}
+        BODY TEXT AND HTML WILL GO HERE
     {% endblock %}
 </body>
 </html>
