@@ -40,8 +40,10 @@ MOST_LOVED_MELONS = {
 @app.route("/")
 def get_start_info():
     """ Renders home page, gets user's name to populate elsewhere on site """
-
-    return render_template("homepage.html")
+    if "name" in session:
+        return redirect("/top-melons")
+    else:
+        return render_template("homepage.html")
 
 @app.route("/get-name")
 def render_name():

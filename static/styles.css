@@ -76,6 +76,9 @@ img {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #4a9947;
 }
 
 .get_name {
